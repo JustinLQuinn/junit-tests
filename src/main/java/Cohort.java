@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Cohort {
 
-    private List<Student> students;
+    private ArrayList<Student> students;
 
     public Cohort() {
         this.students = new ArrayList<>();
@@ -17,11 +17,10 @@ public class Cohort {
         return avg / this.getStudents().size();
     }
 
-    public void addStudent(Student student){
-        students.add(student);
-    }
+    public void addStudent(Student student){students.add(student);}
 
-    public List<Student> getStudents() {
+    public ArrayList<Student> getStudents() {
+
         return students;
     }
 }
