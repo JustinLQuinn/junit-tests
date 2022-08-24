@@ -19,20 +19,19 @@ public void testIfConstructorCreatesCohort(){
 
 @Test
     public void testIfAddStudentWorks(){
-    Student Steve = new Student(2L, "Steve");
+    Student Steve = new Student(2, "Steve");
     Venus.addStudent(Steve);
     Student S = Steve;
-    assertSame(7, Venus.getStudents().get(0));
-//    assertEquals(2L, Steve.getId());
-//
-//    System.out.println(Venus.getStudents());
-//
-//    Student Mary = new Student(1L, "Mary");
-//    Venus.addStudent(Mary);
-//    assertEquals("Mary", Mary.getName());
-//    assertEquals(1L, Mary.getId());
-//
+    assertSame(S.getName(), Venus.getStudents().get(0).getName());
+//    System.out.print(Venus.getStudents());
+
+    Student Mary = new Student(1, "Mary");
+    Venus.addStudent(Mary);
+    assertEquals("Mary", Venus.getStudents().get(1).getName());
+    assertEquals(1, Venus.getStudents().get(1).getId());
 //    System.out.println(Venus.getStudents());
 }
 
+@Test
+    public void test
 }

@@ -4,10 +4,9 @@ public class Student {
     @Override
     public String toString() {
         return
-                "id=" + id +
-                " name=" + name +
-                " grades=" + grades;
-
+                "id:" + id +
+                " name:" + name +
+                " grades:" + grades;
     }
 
     private long id;

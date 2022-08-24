@@ -20,7 +20,6 @@ public class Cohort {
     public void addStudent(Student student){students.add(student);}
 
     public ArrayList<Student> getStudents() {
-
         return students;
     }
 }
